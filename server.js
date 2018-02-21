@@ -8,7 +8,7 @@ var path = require("path");
 var jsonParser = bodyParser.json();
 
 // PORT link
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // body parse to set format
 app.use(bodyParser.urlencoded({ extended: true }));
